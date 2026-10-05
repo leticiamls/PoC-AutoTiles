@@ -118,3 +118,6 @@ scale = Vector2(1.4804688, 1.411133)
 sprite_frames = SubResource("SpriteFrames_dedxr")
 animation = &"walk"
 autoplay = "idle"
+
+[node name="Mirror_placeholder" type="Marker2D" parent="." unique_id=373834179]
+position = Vector2(1, 0)

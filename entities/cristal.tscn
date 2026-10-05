@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ccnqw112bnj1g"]
+
+[ext_resource type="Script" uid="uid://pin0f2ffsgyi" path="res://scripts/cristal.gd" id="1_x6c6u"]
+[ext_resource type="Texture2D" uid="uid://djk16jwaygbam" path="res://sprites/crystal-pixel.png" id="2_mphci"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dedxr"]
+radius = 5.0
+height = 18.0
+
+[node name="Cristal" type="StaticBody2D" unique_id=1137368453 groups=["cristals"]]
+z_index = 2
+collision_layer = 4
+script = ExtResource("1_x6c6u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=926339977]
+shape = SubResource("CapsuleShape2D_dedxr")
+debug_color = Color(0.63455266, 0.29276443, 0.93151003, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1697553314]
+position = Vector2(0.49999976, 0.5000005)
+scale = Vector2(0.068749994, 0.06418919)
+texture = ExtResource("2_mphci")

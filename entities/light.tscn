@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://8l8g6elshlux"]
+
+[ext_resource type="Script" uid="uid://dgbw02svq4ihd" path="res://scripts/light.gd" id="1_hdgcg"]
+
+[node name="Light" type="Node2D" unique_id=863633569]
+modulate = Color(1, 1, 0.827451, 0.65882355)
+rotation = 1.9425515
+script = ExtResource("1_hdgcg")
+
+[node name="Raio" type="RayCast2D" parent="." unique_id=1054878634]
+rotation = -0.3647738
+target_position = Vector2(0, 115)
+collision_mask = 5
+
+[node name="Feixe" type="Line2D" parent="." unique_id=216032574]
+rotation = -0.3647738
+points = PackedVector2Array(0, 0, 0, 100)
+width = 3.0
+begin_cap_mode = 2
+end_cap_mode = 2
